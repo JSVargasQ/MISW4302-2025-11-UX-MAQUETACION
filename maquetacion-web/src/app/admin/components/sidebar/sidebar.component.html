@@ -1,0 +1,51 @@
+<mat-sidenav-container class="sidebar-container">
+  <mat-sidenav #sidenav mode="side" opened="true" class="sidebar">
+    <mat-nav-list class="ms-4">
+      <!-- Dashboard -->
+      <a mat-list-item routerLink="/dashboard" routerLinkActive="active">
+        <mat-icon mat-list-icon>home_outlined</mat-icon>
+        <span class="ms-3">Dashboard</span>
+      </a>
+
+
+      <!-- Categorias -->
+      <a mat-list-item routerLink="/users" routerLinkActive="active">
+        <mat-icon mat-list-icon>bookmark_outlined</mat-icon>
+        <span class="ms-3">Categorias</span>
+      </a>
+
+      <!-- Ejercicios -->
+      <a mat-list-item routerLink="/products" routerLinkActive="active">
+        <mat-icon mat-list-icon>directions_walk</mat-icon>
+        <span class="ms-3">Ejercicios</span>
+      </a>
+
+
+      <!-- Usuarios -->
+      <a mat-list-item routerLink="/products" routerLinkActive="active">
+        <mat-icon mat-list-icon>groups_outlined</mat-icon>
+        <span class="ms-3">Usuarios</span>
+      </a>
+
+      <!-- Reportes -->
+      <a mat-list-item routerLink="/products" routerLinkActive="active">
+        <mat-icon mat-list-icon>folder_outlined</mat-icon>
+        <span class="ms-3">Reportes</span>
+      </a>
+
+      <!-- Notificaciones -->
+      <a mat-list-item routerLink="/products" routerLinkActive="active">
+        <mat-icon mat-list-icon>notifications_outlined</mat-icon>
+        <span class="ms-3">Notificaciones</span>
+      </a>
+
+      <!-- APIs -->
+      <a mat-list-item routerLink="/products" routerLinkActive="active">
+        <mat-icon mat-list-icon>share</mat-icon>
+        <span class="ms-3">APIs</span>
+      </a>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>

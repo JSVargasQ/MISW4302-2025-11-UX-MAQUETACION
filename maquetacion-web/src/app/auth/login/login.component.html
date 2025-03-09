@@ -1,10 +1,46 @@
-<p>login works!</p>
-<p>login works!</p>
-<p>login works!</p>
-<p>login works!</p>
-<p>login works!</p>
-<p>login works!</p>
-<p>login works!</p>
-<p>login works!</p>
-<p>login works!</p>
-<p>login works!</p>
+
+<!-- Card for login-->
+<mat-card appearance="outlined" class="py-4">
+
+  <!-- Title -->
+  <mat-card-header class="d-block">
+    <mat-card-title class="mt-1">
+      <h1 class="w-100 text-center">Bienvenido</h1>
+    </mat-card-title>
+  </mat-card-header>
+
+  <!-- Login content -->
+
+  <form class="px-4 d-grid mt-4">
+    <!-- Email input -->
+    <mat-form-field appearance="fill" >
+      <mat-label>Correo electrónico*</mat-label>
+      <input matInput placeholder="">
+      <mat-error>Error...</mat-error>
+    </mat-form-field>
+
+    <!-- Password input -->
+    <mat-form-field appearance="fill">
+      <mat-label>Contraseña*</mat-label>
+      <input matInput placeholder="" type="password">
+      <mat-error>Error...</mat-error>
+    </mat-form-field>
+  </form>
+
+
+  <!-- Forget password -->
+  <div class="forget-password p-4">
+    <a href="#">¿Olvidaste tu contraseña?</a>
+  </div>
+
+  <!--  Buttons -->
+  <mat-card-actions class="btn-container">
+    <!-- Login button -->
+    <button
+      (click)="goToAdminDashboard()"
+      class="btn-login"
+      mat-flat-button>
+      Iniciar sesión
+    </button>
+  </mat-card-actions>
+</mat-card>

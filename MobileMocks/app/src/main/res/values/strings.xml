@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MobileMocks</string>
+    <string name="title_home">Home</string>
+    <string name="title_alarms">Alarmas</string>
+    <string name="title_settings">Ajustes</string>
+    <string name="title_ex1">Postura de la silla</string>
+    <string name="instructions_ex1">Inhala y al exhalar dobla las piernas, flexionando las rodillas de tal modo que tu cuerpo descienda hasta que tus muslos y tu tórax formen un ángulo de 90 grados.
+Busca un punto de equilibrio de tal modo que tus rodillas no queden más adelantadas que la punta de tus pies. Ve alzando ambos brazos y extiéndelos de manera que apunten hacia arriba.
+Tu objetivo es que formen una línea recta con tu espalda, como si fueran una prolongación de la misma.</string>
+</resources>

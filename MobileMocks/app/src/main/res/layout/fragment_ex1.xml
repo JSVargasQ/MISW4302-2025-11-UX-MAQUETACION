@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.exercises.Ex1Fragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarEx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBarEx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:navigationIcon="@drawable/arrow_back_24px"
+            app:title="@string/title_ex1"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/postura_silla"
+        android:layout_width="363.49dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/title_ex1"
+        android:src="@drawable/postura_silla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarEx1"
+        app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="364dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="19dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/instructions_ex1"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postura_silla" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

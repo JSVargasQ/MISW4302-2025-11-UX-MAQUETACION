@@ -9,7 +9,27 @@
         android:id="@+id/navigation_home"
         android:name="com.ux.mobilemocks.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_ex1Fragment"
+            app:destination="@id/ex1Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ex1Fragment"
+        android:name="com.ux.mobilemocks.ui.exercises.Ex1Fragment"
+        android:label="@string/title_ex1"
+        tools:layout="@layout/fragment_ex1" >
+        <action
+            android:id="@+id/action_ex1Fragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.ux.mobilemocks.ui.summary.SummaryFragment"
+        android:label="@string/summary"
+        tools:layout="@layout/fragment_summary" />
 
     <fragment
         android:id="@+id/navigation_alarms"

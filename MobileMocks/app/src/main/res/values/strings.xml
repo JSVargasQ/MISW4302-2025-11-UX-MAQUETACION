@@ -3,8 +3,16 @@
     <string name="title_home">Home</string>
     <string name="title_alarms">Alarmas</string>
     <string name="title_settings">Ajustes</string>
+    <string name="previous">Anterior</string>
+    <string name="finish">Finalizar</string>
+    <string name="next">Siguiente</string>
     <string name="title_ex1">Postura de la silla</string>
-    <string name="instructions_ex1">Inhala y al exhalar dobla las piernas, flexionando las rodillas de tal modo que tu cuerpo descienda hasta que tus muslos y tu tórax formen un ángulo de 90 grados.
-Busca un punto de equilibrio de tal modo que tus rodillas no queden más adelantadas que la punta de tus pies. Ve alzando ambos brazos y extiéndelos de manera que apunten hacia arriba.
-Tu objetivo es que formen una línea recta con tu espalda, como si fueran una prolongación de la misma.</string>
+    <string name="instructions_ex1">
+        1. Inhala y al exhalar dobla las piernas, flexionando las rodillas de tal modo que tu cuerpo descienda hasta que tus muslos y tu tórax formen un ángulo de 90 grados.\n
+        2. Busca un punto de equilibrio de tal modo que tus rodillas no queden más adelantadas que la punta de tus pies. Ve alzando ambos brazos y extiéndelos de manera que apunten hacia arriba.\n
+        3. Tu objetivo es que formen una línea recta con tu espalda, como si fueran una prolongación de la misma.
+    </string>
+    <string name="repeats_ex1">Repeticiones: 10 veces</string>
+    <string name="rest_ex1">Descanso: 20 segundos</string>
+    <string name="summary">Resumen</string>
 </resources>

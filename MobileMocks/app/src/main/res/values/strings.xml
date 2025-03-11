@@ -55,4 +55,10 @@
     <string name="congrats_subtitle">Has completado tu meta de la semana</string>
     <string name="share_summary">¡Comparte este logro con tus amigos!</string>
     <string name="share">Compartir</string>
+    <string name="dialog_title">¡Completé mi meta de la semana!</string>
+    <string name="dialog_share">Compartir en</string>
+    <string name="dialog_fb">Facebook</string>
+    <string name="dialog_ig">Instagram</string>
+    <string name="dialog_x">X</string>
+    <string name="cancel">Cancelar</string>
 </resources>

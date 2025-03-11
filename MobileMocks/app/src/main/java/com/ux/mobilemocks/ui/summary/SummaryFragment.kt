@@ -31,6 +31,12 @@ class SummaryFragment : Fragment() {
             findNavController().navigate(R.id.action_summaryFragment_to_navigation_home)
         }
 
+        binding.shareButton.setOnClickListener {
+            val shareDialog = ShareDialogFragment()
+            shareDialog.show(parentFragmentManager, "ShareDialogFragment")
+        }
+
+
         return root
     }
 

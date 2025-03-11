@@ -3,6 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {AdminComponent} from './admin.component';
+import {ExercisesComponent} from './exercises/exercises.component';
 
 const routes: Routes = [
   {
@@ -10,8 +11,16 @@ const routes: Routes = [
     component: AdminComponent,
     children: [
       {
-        path: '',
-        component: DashboardComponent
+        path: 'dashboard',
+        component: DashboardComponent,
+      },
+      {
+        path: 'exercises',
+        component: ExercisesComponent,
+      },
+      {
+        path: '**',
+        redirectTo: 'dashboard'
       }
     ]
   }

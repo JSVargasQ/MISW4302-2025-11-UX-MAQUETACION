@@ -1,0 +1,69 @@
+<!-- Title dialog -->
+<h1 mat-dialog-title class="text-center my-3">
+  Agregar ejercicio
+</h1>
+
+<!-- Content dialog-->
+<mat-dialog-content class="mat-typography mx-3">
+
+  <div class="row container gap-3">
+    <!-- Name -->
+    <mat-form-field class="col-12" appearance="fill">
+      <mat-label>Nombre del ejercicio*</mat-label>
+      <input matInput placeholder="">
+    </mat-form-field>
+
+    <!-- Category -->
+    <mat-form-field class="col-12" appearance="fill">
+      <mat-label>Categoría*</mat-label>
+      <mat-select>
+        <mat-option value="visual">Visual</mat-option>
+        <mat-option value="fisica">Fisica</mat-option>
+        <mat-option value="estiramiento">Estiramiento</mat-option>
+        <mat-option value="meditacion">Meditación</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Description -->
+    <mat-form-field class="col-12" appearance="fill">
+      <mat-label>Paso a paso del ejercicio*</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+
+    <!-- Visual guide-->
+    <mat-label>Guía visual*</mat-label>
+    <div class="d-flex border-dotted justify-content-center p-3 ">
+
+      <div class="d-flex flex-column align-items-center gap-2 mt-2">
+        <mat-icon>upload_file</mat-icon>
+        <p>Carga un archivo .gif, mp4 o jpg</p>
+      </div>
+
+    </div>
+  </div>
+
+
+</mat-dialog-content>
+
+
+<!-- Actions buttons -->
+<mat-dialog-actions class="my-3" align="center">
+
+  <!-- Add button-->
+  <button
+    mat-flat-button
+  >
+    Agregar
+  </button>
+
+  <!-- Cancel button-->
+  <button
+    class="btn-closed"
+    mat-flat-button
+    mat-dialog-close
+    [mat-dialog-close]="true"
+    cdkFocusInitial
+  >
+    Cancelar
+  </button>
+</mat-dialog-actions>

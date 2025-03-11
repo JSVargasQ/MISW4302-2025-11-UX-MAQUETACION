@@ -9,7 +9,7 @@ import {MaterialModule} from '../shared/material.module';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    MaterialModule
+    MaterialModule,
   ]
 })
 export class AdminModule { }

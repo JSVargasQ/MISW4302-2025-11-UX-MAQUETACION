@@ -5,8 +5,6 @@ X
 (maquetacion-web/src/app/app.component.ts,f\d\fdc4930941061db55cc05015aa3051f7f6f48a10
 g
 7maquetacion-web/src/app/auth/login/login.component.html,3\e\3eddf4d36cf5f987b10733d82eaa0a4dc8c18df9
-j
-:maquetacion-web/src/app/auth/login/login.component.spec.ts,6\1\61dfd84cecd012df2913ed554ad2cdaaa47eee98
 [
 +maquetacion-web/src/app/auth/auth.module.ts,7\d\7d3a69f30e651e235a9ce006fbb7f7e254aec882
 c

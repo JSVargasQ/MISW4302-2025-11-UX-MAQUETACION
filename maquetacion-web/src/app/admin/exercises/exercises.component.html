@@ -1,0 +1,84 @@
+<div>
+
+  <div class="container mt-4">
+    <div class="row pt-2">
+      <div class="col">
+        <h2>Ejercicios de pausas activas</h2>
+
+      </div>
+
+      <div class="col text-end">
+        <!-- Button to add a new exercise -->
+        <button
+          (click)="openDialog()"
+          mat-flat-button>
+          <mat-icon>add_circle_outline</mat-icon>
+          Agregar ejercicio
+        </button>
+      </div>
+
+
+    </div>
+
+    <div class="d-flex flex-column mt-4">
+      <p>
+        Gestiona los ejercicios o las actividades asociadas a las pausas activas.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Table for exercises -->
+  <div class="container mt-4">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th class="text-center" mat-header-cell *matHeaderCellDef> Ejercicio </th>
+        <td class="text-center" mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <!-- Category Column -->
+      <ng-container matColumnDef="category">
+        <th class="text-center" mat-header-cell *matHeaderCellDef> Categoría </th>
+        <td class="text-center" mat-cell *matCellDef="let element"> {{element.category}} </td>
+      </ng-container>
+
+      <!-- Guide Visual Column -->
+      <ng-container matColumnDef="hasGuide">
+        <th class="text-center" mat-header-cell *matHeaderCellDef> ¿Tiene guía visual? </th>
+        <td class="text-center" mat-cell *matCellDef="let element"> {{element.hasGuide}} </td>
+      </ng-container>
+
+      <!-- Status Column -->
+      <ng-container matColumnDef="status">
+        <th class="text-center" mat-header-cell *matHeaderCellDef> Estado </th>
+        <td class="text-center" mat-cell *matCellDef="let element"> {{element.status}} </td>
+      </ng-container>
+
+      <!-- Actions Column -->
+      <ng-container matColumnDef="actions">
+        <th class="text-center" mat-header-cell *matHeaderCellDef>Acciones</th>
+        <td class="text-center" mat-cell *matCellDef="let element">
+          <!-- Edit button -->
+          <button class="rounded-circle text-white button-primary" color="primary" mat-mini-fab aria-label="Edit button">
+            <mat-icon>edit_outline</mat-icon>
+          </button>
+
+          <!-- Delete button -->
+          <button class="rounded-circle ms-2 text-white button-error" mat-mini-fab aria-label="Delete button">
+            <mat-icon>delete_outline</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+
+      <tr class="header-table text-light" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+  </div>
+
+
+</div>

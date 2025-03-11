@@ -40,7 +40,7 @@ class Ex1Fragment : Fragment() {
         Glide.with(this)
             .asGif()
             .load(R.drawable.postura_silla)
-            .into(binding.posturaSilla)
+            .into(binding.gifEx1)
 
         val repeatsEx1 = SpannableString(getString(R.string.repeats_ex1))
         repeatsEx1.setSpan(StyleSpan(Typeface.BOLD), 0, 13, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
@@ -54,6 +54,10 @@ class Ex1Fragment : Fragment() {
 
         binding.finishButtonEx1.setOnClickListener {
             findNavController().navigate(R.id.action_ex1Fragment_to_summaryFragment)
+        }
+
+        binding.iconButtonNextEx1.setOnClickListener {
+            findNavController().navigate(R.id.action_ex1Fragment_to_ex2Fragment)
         }
 
         return root

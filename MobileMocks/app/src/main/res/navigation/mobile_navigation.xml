@@ -23,6 +23,63 @@
         <action
             android:id="@+id/action_ex1Fragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_ex1Fragment_to_ex2Fragment"
+            app:destination="@id/ex2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ex2Fragment"
+        android:name="com.ux.mobilemocks.ui.exercises.Ex2Fragment"
+        android:label="@string/title_ex2"
+        tools:layout="@layout/fragment_ex2" >
+        <action
+            android:id="@+id/action_ex2Fragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_ex2Fragment_to_ex1Fragment"
+            app:destination="@id/ex1Fragment" />
+        <action
+            android:id="@+id/action_ex2Fragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_ex2Fragment_to_ex3Fragment"
+            app:destination="@id/ex3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ex3Fragment"
+        android:name="com.ux.mobilemocks.ui.exercises.Ex3Fragment"
+        android:label="@string/title_ex3"
+        tools:layout="@layout/fragment_ex3" >
+        <action
+            android:id="@+id/action_ex3Fragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_ex3Fragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_ex3Fragment_to_ex2Fragment"
+            app:destination="@id/ex2Fragment" />
+        <action
+            android:id="@+id/action_ex3Fragment_to_ex4Fragment"
+            app:destination="@id/ex4Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ex4Fragment"
+        android:name="com.ux.mobilemocks.ui.exercises.Ex4Fragment"
+        android:label="@string/title_ex4"
+        tools:layout="@layout/fragment_ex4" >
+        <action
+            android:id="@+id/action_ex4Fragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_ex4Fragment_to_ex3Fragment"
+            app:destination="@id/ex3Fragment" />
+        <action
+            android:id="@+id/action_ex4Fragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
     </fragment>
 
     <fragment

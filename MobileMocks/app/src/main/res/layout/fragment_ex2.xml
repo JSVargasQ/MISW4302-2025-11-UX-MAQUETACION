@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.exercises.Ex1Fragment">
+    tools:context=".ui.exercises.Ex2Fragment">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarEx1"
+        android:id="@+id/appBarEx2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
@@ -15,63 +15,63 @@
         app:liftOnScroll="true">
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/topAppBarEx1"
+            android:id="@+id/topAppBarEx2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="?attr/actionBarSize"
             app:layout_scrollFlags="scroll|enterAlways|snap"
             app:navigationIcon="@drawable/arrow_back_24px"
-            app:title="@string/title_ex1"
+            app:title="@string/title_ex2"
             app:titleCentered="true" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/gifEx1"
+        android:id="@+id/gifEx2"
         android:layout_width="363.49dp"
         android:layout_height="204dp"
         android:layout_marginTop="0dp"
-        android:contentDescription="@string/title_ex1"
-        android:src="@drawable/postura_silla"
+        android:contentDescription="@string/title_ex2"
+        android:src="@drawable/postura_cobra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appBarEx1"
+        app:layout_constraintTop_toBottomOf="@id/appBarEx2"
         app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
     <TextView
-        android:id="@+id/instructions_ex1"
+        android:id="@+id/instructions_ex2"
         android:layout_width="364dp"
         android:layout_height="319dp"
         android:layout_marginTop="19dp"
         android:gravity="center_vertical"
-        android:text="@string/instructions_ex1"
+        android:text="@string/instructions_ex2"
         android:textAppearance="?attr/textAppearanceBodyLarge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/gifEx1" />
+        app:layout_constraintTop_toBottomOf="@id/gifEx2" />
 
     <TextView
-        android:id="@+id/repeats_ex1"
+        android:id="@+id/repeats_ex2"
         android:layout_width="364dp"
         android:layout_height="36dp"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal|center_vertical"
-        android:text="@string/repeats_ex1"
+        android:text="@string/repeats_ex2"
         android:textAppearance="?attr/textAppearanceBodyLarge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/instructions_ex1" />
+        app:layout_constraintTop_toBottomOf="@id/instructions_ex2" />
 
     <TextView
-        android:id="@+id/rest_ex1"
+        android:id="@+id/rest_ex2"
         android:layout_width="364dp"
         android:layout_height="36dp"
         android:gravity="center_horizontal|center_vertical"
-        android:text="@string/rest_ex1"
+        android:text="@string/rest_ex2"
         android:textAppearance="?attr/textAppearanceBodyLarge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/repeats_ex1" />
+        app:layout_constraintTop_toBottomOf="@id/repeats_ex2" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -80,20 +80,19 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rest_ex1">
+        app:layout_constraintTop_toBottomOf="@id/rest_ex2">
 
         <Button
-            android:id="@+id/iconButtonPreviousEx1"
+            android:id="@+id/iconButtonPreviousEx2"
             style="@style/Widget.Material3.Button.IconButton.Filled"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="72dp"
             android:contentDescription="@string/previous"
-            android:enabled="false"
             app:icon="@drawable/arrow_left_24px" />
 
         <Button
-            android:id="@+id/finishButtonEx1"
+            android:id="@+id/finishButtonEx2"
             style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -101,7 +100,7 @@
             android:text="@string/finish" />
 
         <Button
-            android:id="@+id/iconButtonNextEx1"
+            android:id="@+id/iconButtonNextEx2"
             style="@style/Widget.Material3.Button.IconButton.Filled"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

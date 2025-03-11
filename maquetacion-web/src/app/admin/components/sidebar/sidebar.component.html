@@ -1,0 +1,78 @@
+<mat-sidenav-container class="sidebar-container">
+  <mat-sidenav #sidenav mode="side" opened="true" class="sidebar">
+    <mat-nav-list class="ms-4 gap-3 pe-3">
+      <!-- Dashboard -->
+      <a mat-list-item routerLink="dashboard" routerLinkActive="active" class="mt-4">
+        <div class="d-flex">
+          <mat-icon mat-list-icon>home_outlined</mat-icon>
+          <span class="ms-3">Dashboard</span>
+        </div>
+      </a>
+
+      <!-- Categorias -->
+      <a mat-list-item routerLink="#" routerLinkActive="active">
+        <div class="d-flex">
+
+          <mat-icon mat-list-icon>bookmark_outlined</mat-icon>
+          <span class="ms-3">Categorias</span>
+        </div>
+      </a>
+
+      <!-- Ejercicios -->
+      <a mat-list-item routerLink="exercises" routerLinkActive="active">
+        <div class="d-flex">
+
+          <mat-icon mat-list-icon>directions_walk</mat-icon>
+          <span class="ms-3">Ejercicios</span>
+        </div>
+      </a>
+
+      <!-- Usuarios -->
+      <a mat-list-item routerLink="#" routerLinkActive="active">
+        <div class="d-flex">
+
+          <mat-icon mat-list-icon>groups_outlined</mat-icon>
+          <span class="ms-3">Usuarios</span>
+        </div>
+      </a>
+
+      <!-- Reportes -->
+      <a mat-list-item routerLink="#" routerLinkActive="active">
+        <div class="d-flex">
+
+          <mat-icon mat-list-icon>folder_outlined</mat-icon>
+          <span class="ms-3">Reportes</span>
+        </div>
+      </a>
+
+      <!-- Notificaciones -->
+      <a mat-list-item routerLink="#" routerLinkActive="active">
+        <div class="d-flex">
+
+          <mat-icon mat-list-icon>notifications_outlined</mat-icon>
+          <span class="ms-3">Notificaciones</span>
+        </div>
+      </a>
+
+      <!-- APIs -->
+      <a mat-list-item routerLink="#" routerLinkActive="active">
+        <div class="d-flex">
+
+          <mat-icon mat-list-icon>share</mat-icon>
+          <span class="ms-3">APIs</span>
+        </div>
+      </a>
+
+
+      <!-- Logout -->
+      <a mat-list-item routerLink="../" routerLinkActive="active" class="mt-auto mb-3">
+        <div class="d-flex ">
+          <mat-icon mat-list-icon>logout</mat-icon>
+          <span class="ms-3">Cerrar sesión</span>
+        </div>
+      </a>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>

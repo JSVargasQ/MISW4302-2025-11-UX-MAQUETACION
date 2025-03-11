@@ -1,0 +1,27 @@
+.sidebar-container {
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f7f2fa;
+}
+
+mat-nav-list {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+mat-mdc-list-item-unscoped-content  {
+  display: flex !important;
+  align-items: center; /* Opcional: para alinear verticalmente los elementos */
+}

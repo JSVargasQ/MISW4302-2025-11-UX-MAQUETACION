@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">MobileMocks</string>
+    <string name="title_home">Home</string>
+    <string name="title_alarms">Alarmas</string>
+    <string name="title_settings">Ajustes</string>
+    <string name="previous">Anterior</string>
+    <string name="finish">Finalizar</string>
+    <string name="next">Siguiente</string>
+    <string name="title_ex1">Postura de la silla</string>
+    <string name="instructions_ex1">
+        1. Inhala y al exhalar dobla las piernas, flexionando las rodillas de tal modo que tu cuerpo descienda hasta que tus muslos y tu tórax formen un ángulo de 90 grados.\n
+        2. Busca un punto de equilibrio de tal modo que tus rodillas no queden más adelantadas que la punta de tus pies. Ve alzando ambos brazos y extiéndelos de manera que apunten hacia arriba.\n
+        3. Tu objetivo es que formen una línea recta con tu espalda, como si fueran una prolongación de la misma.
+    </string>
+    <string name="repeats_ex1">Repeticiones: 10 veces</string>
+    <string name="rest_ex1">Descanso: 20 segundos</string>
+    <string name="title_ex2">Postura de la cobra</string>
+    <string name="instructions_ex2">
+        1. Túmbate boca abajo con la frente, piernas y pies estirados en el suelo.\n
+        2. Coloca las palmas debajo de los hombros, con los dedos apuntando hacia delante.\n
+        3. Inspira, sube ligeramente la cabeza, el pecho y el abdomen, apoyando bien las palmas en el suelo.\n
+        4. Presiona el hueso púbico contra el suelo, mantén el coxis hacia dentro y presiona los extremos de los pies contra el suelo.\n
+        5. Al expirar, baja lentamente, manteniendo la mirada hacia el cielo y apoya abdomen, pecho, barbilla, nariz y la frente en el suelo.\n
+    </string>
+    <string name="repeats_ex2">Repeticiones: 4 a 6 veces</string>
+    <string name="rest_ex2">Descanso: 30 segundos</string>
+    <string name="title_ex3">Postura del gato y la vaca</string>
+    <string name="instructions_ex3">
+        1. Ponte a gatas sobre la esterilla, con las rodillas debajo de las caderas y las manos debajo de los hombros.\n
+        2. Inhala, arquea la espalda y mira hacia arriba. Ahora estás en bitilasana o la postura de la vaca.\n
+        3. Exhala, mete el ombligo hacia dentro, redondea la espalda y baja la cabeza. Ahora estás en marjaryasana o la postura del gato.\n
+        4. Alterna los dos movimientos siguiendo el ritmo de tu respiración.\n
+    </string>
+    <string name="repeats_ex3">Repeticiones: 5 a 10 veces</string>
+    <string name="rest_ex3">Descanso: 30 segundos</string>
+    <string name="title_ex4">Uttanasana</string>
+    <string name="instructions_ex4">
+        1. De pie inhala y eleva los brazos juntando las palmas por encima de la cabeza. Recuerda activar los músculos intercostales.\n
+        2. Flexiona el cuerpo hacia adelante desde las caderas y alarga los brazos al frente, lejos del coxis.\n
+        3. Mantén las piernas rectas y apunta con el pecho hacia las rodillas, llevando las manos al suelo a ambos lados de los pies o sobre los tobillos.\n
+        4. Estira la columna y el cuello, mete el mentón ligeramente hacia la garganta y apunta con la coronilla hacia el suelo.\n
+    </string>
+    <string name="repeats_ex4">Repeticiones: 4 veces</string>
+    <string name="rest_ex4">Descanso: 10 segundos</string>
+    <string name="summary">Resumen</string>
+    <string name="summary_time">Tiempo total:</string>
+    <string name="summary_points">Puntos conseguidos:</string>
+    <string name="summary_ex">Ejercicios:</string>
+    <string name="summary_time_value">10 minutos</string>
+    <string name="summary_points_value">20 puntos</string>
+    <string name="summary_ex_value">4 ejercicios</string>
+    <string name="summary_stress">Nivel de estrés</string>
+    <string name="summary_heart">Ritmo cardíaco</string>
+    <string name="congrats">¡Felicitaciones!</string>
+    <string name="congrats_subtitle">Has completado tu meta de la semana</string>
+    <string name="share_summary">¡Comparte este logro con tus amigos!</string>
+    <string name="share">Compartir</string>
+    <string name="dialog_title">¡Completé mi meta de la semana!</string>
+    <string name="dialog_share">Compartir en</string>
+    <string name="dialog_fb">Facebook</string>
+    <string name="dialog_ig">Instagram</string>
+    <string name="dialog_x">X</string>
+    <string name="cancel">Cancelar</string>
+</resources>

@@ -1,0 +1,31 @@
+/* login.component.scss */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+mat-card {
+  width: 100%;
+  max-width: 500px;
+}
+
+mat-card-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.forget-password {
+  text-align: right;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-login {
+  text-align: center;
+}

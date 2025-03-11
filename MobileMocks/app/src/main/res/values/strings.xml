@@ -43,4 +43,16 @@
     <string name="repeats_ex4">Repeticiones: 4 veces</string>
     <string name="rest_ex4">Descanso: 10 segundos</string>
     <string name="summary">Resumen</string>
+    <string name="summary_time">Tiempo total:</string>
+    <string name="summary_points">Puntos conseguidos:</string>
+    <string name="summary_ex">Ejercicios:</string>
+    <string name="summary_time_value">10 minutos</string>
+    <string name="summary_points_value">20 puntos</string>
+    <string name="summary_ex_value">4 ejercicios</string>
+    <string name="summary_stress">Nivel de estrés</string>
+    <string name="summary_heart">Ritmo cardíaco</string>
+    <string name="congrats">¡Felicitaciones!</string>
+    <string name="congrats_subtitle">Has completado tu meta de la semana</string>
+    <string name="share_summary">¡Comparte este logro con tus amigos!</string>
+    <string name="share">Compartir</string>
 </resources>

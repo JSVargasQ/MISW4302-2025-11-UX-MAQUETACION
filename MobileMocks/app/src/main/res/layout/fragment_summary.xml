@@ -4,6 +4,191 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment">
+    tools:context=".ui.summary.SummaryFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBarSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:navigationIcon="@drawable/arrow_back_24px"
+            app:title="@string/summary"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/summary_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/summary_time"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarSummary" />
+
+    <TextView
+        android:id="@+id/summary_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/summary_points"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_time" />
+
+    <TextView
+        android:id="@+id/summary_ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/summary_ex"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_points" />
+
+    <TextView
+        android:id="@+id/summary_time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/summary_time_value"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarSummary" />
+
+    <TextView
+        android:id="@+id/summary_points_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/summary_points_value"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_time_value" />
+
+    <TextView
+        android:id="@+id/summary_ex_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/summary_ex_value"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_points_value" />
+
+    <ImageView
+        android:id="@+id/image_summary_stress"
+        android:layout_width="178dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="37dp"
+        android:contentDescription="@string/summary_stress"
+        android:src="@drawable/stress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_ex" />
+
+    <TextView
+        android:id="@+id/summary_stress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:text="@string/summary_stress"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_summary_stress" />
+
+    <ImageView
+        android:id="@+id/image_summary_heart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="49dp"
+        android:contentDescription="@string/summary_heart"
+        android:src="@drawable/heart_rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_ex_value" />
+
+    <TextView
+        android:id="@+id/summary_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:text="@string/summary_heart"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_summary_heart" />
+
+    <ImageView
+        android:id="@+id/image_congrats"
+        android:layout_width="181.69dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/summary_heart"
+        android:src="@drawable/gold_medal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_stress" />
+
+    <TextView
+        android:id="@+id/congrats"
+        android:layout_width="181dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/congrats"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_congrats" />
+
+    <TextView
+        android:id="@+id/congrats_subtitle"
+        android:layout_width="380dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/congrats_subtitle"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congrats" />
+
+    <TextView
+        android:id="@+id/share_summary"
+        android:layout_width="380dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/share_summary"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congrats_subtitle" />
+
+
+    <Button
+        android:id="@+id/shareButton"
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/share"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_summary" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

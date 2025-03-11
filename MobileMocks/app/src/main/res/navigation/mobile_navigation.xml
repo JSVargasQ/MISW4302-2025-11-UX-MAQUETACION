@@ -16,10 +16,16 @@
     </fragment>
 
     <fragment
+        android:id="@+id/listFragment"
+        android:name="com.ux.mobilemocks.ui.list.ListFragment"
+        android:label="@string/title_alarms"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
         android:id="@+id/ex1Fragment"
         android:name="com.ux.mobilemocks.ui.exercises.Ex1Fragment"
         android:label="@string/title_ex1"
-        tools:layout="@layout/fragment_ex1" >
+        tools:layout="@layout/fragment_ex1">
         <action
             android:id="@+id/action_ex1Fragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />
@@ -32,16 +38,16 @@
         android:id="@+id/ex2Fragment"
         android:name="com.ux.mobilemocks.ui.exercises.Ex2Fragment"
         android:label="@string/title_ex2"
-        tools:layout="@layout/fragment_ex2" >
+        tools:layout="@layout/fragment_ex2">
+        <action
+            android:id="@+id/action_ex2Fragment_to_listFragment"
+            app:destination="@id/listFragment" />
         <action
             android:id="@+id/action_ex2Fragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />
         <action
             android:id="@+id/action_ex2Fragment_to_ex1Fragment"
             app:destination="@id/ex1Fragment" />
-        <action
-            android:id="@+id/action_ex2Fragment_to_navigation_home"
-            app:destination="@id/navigation_home" />
         <action
             android:id="@+id/action_ex2Fragment_to_ex3Fragment"
             app:destination="@id/ex3Fragment" />
@@ -51,10 +57,10 @@
         android:id="@+id/ex3Fragment"
         android:name="com.ux.mobilemocks.ui.exercises.Ex3Fragment"
         android:label="@string/title_ex3"
-        tools:layout="@layout/fragment_ex3" >
+        tools:layout="@layout/fragment_ex3">
         <action
-            android:id="@+id/action_ex3Fragment_to_navigation_home"
-            app:destination="@id/navigation_home" />
+            android:id="@+id/action_ex3Fragment_to_listFragment"
+            app:destination="@id/listFragment" />
         <action
             android:id="@+id/action_ex3Fragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />
@@ -70,33 +76,25 @@
         android:id="@+id/ex4Fragment"
         android:name="com.ux.mobilemocks.ui.exercises.Ex4Fragment"
         android:label="@string/title_ex4"
-        tools:layout="@layout/fragment_ex4" >
+        tools:layout="@layout/fragment_ex4">
+        <action
+            android:id="@+id/action_ex4Fragment_to_listFragment"
+            app:destination="@id/listFragment" />
         <action
             android:id="@+id/action_ex4Fragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />
         <action
             android:id="@+id/action_ex4Fragment_to_ex3Fragment"
             app:destination="@id/ex3Fragment" />
-        <action
-            android:id="@+id/action_ex4Fragment_to_navigation_home"
-            app:destination="@id/navigation_home" />
     </fragment>
 
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.ux.mobilemocks.ui.summary.SummaryFragment"
         android:label="@string/summary"
-        tools:layout="@layout/fragment_summary" />
-
-    <fragment
-        android:id="@+id/navigation_alarms"
-        android:name="com.ux.mobilemocks.ui.dashboard.DashboardFragment"
-        android:label="@string/title_alarms"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_settings"
-        android:name="com.ux.mobilemocks.ui.notifications.NotificationsFragment"
-        android:label="@string/title_settings"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_summary">
+        <action
+            android:id="@+id/action_summaryFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 </navigation>

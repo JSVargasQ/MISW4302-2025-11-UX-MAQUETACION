@@ -1,18 +1,15 @@
-package com.ux.mobilemocks.ui.summary
+package com.ux.mobilemocks.ui.list
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.ux.mobilemocks.R
-import com.ux.mobilemocks.databinding.FragmentSummaryBinding
+import com.ux.mobilemocks.databinding.FragmentListBinding
 
-class SummaryFragment : Fragment() {
+class ListFragment : Fragment() {
 
-
-    private var _binding: FragmentSummaryBinding? = null
+    private var _binding: FragmentListBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,12 +21,10 @@ class SummaryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentSummaryBinding.inflate(inflater, container, false)
+        _binding = FragmentListBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.topAppBarSummary.setNavigationOnClickListener {
-            findNavController().navigate(R.id.action_summaryFragment_to_navigation_home)
-        }
+
 
         return root
     }

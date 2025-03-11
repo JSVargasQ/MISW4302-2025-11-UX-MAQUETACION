@@ -33,9 +33,8 @@ class Ex4Fragment : Fragment() {
 
         val root: View = binding.root
 
-        // TODO: go back to exercise list
         binding.topAppBarEx4.setNavigationOnClickListener {
-            requireActivity().onBackPressedDispatcher.onBackPressed()
+            findNavController().navigate(R.id.action_ex4Fragment_to_listFragment)
         }
 
         Glide.with(this)

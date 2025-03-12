@@ -3,15 +3,14 @@
   <div class="container mt-4">
     <div class="row pt-2">
       <div class="col">
-        <h2>Ejercicios de pausas activas</h2>
-
+        <h2>Categorías de pausas activas</h2>
       </div>
 
-      <div class="col text-end">
-        <!-- Button to add a new exercise -->
+      <div class="col text-end  me-auto">
+        <!-- Button to add a new category -->
         <button (click)="openDialog()" mat-flat-button>
           <mat-icon>add_circle_outline</mat-icon>
-          Agregar ejercicio
+          Agregar categoría
         </button>
       </div>
 
@@ -20,32 +19,26 @@
 
     <div class="d-flex flex-column mt-4">
       <p>
-        Gestiona los ejercicios o las actividades asociadas a las pausas activas.
+        Gestiona las distintas categorías de pausas activas.
       </p>
     </div>
   </div>
 
 
-  <!-- Table for exercises -->
+  <!-- Table for categories -->
   <div class="container mt-4">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table-bordered">
 
       <!-- Name Column -->
       <ng-container matColumnDef="name">
-        <th class="text-center" mat-header-cell *matHeaderCellDef> Ejercicio </th>
+        <th class="text-center" mat-header-cell *matHeaderCellDef> Categoría </th>
         <td class="text-center" mat-cell *matCellDef="let element"> {{element.name}} </td>
       </ng-container>
 
-      <!-- Category Column -->
-      <ng-container matColumnDef="category">
-        <th class="text-center" mat-header-cell *matHeaderCellDef> Categoría </th>
-        <td class="text-center" mat-cell *matCellDef="let element"> {{element.category}} </td>
-      </ng-container>
-
-      <!-- Guide Visual Column -->
-      <ng-container matColumnDef="hasGuide">
-        <th class="text-center" mat-header-cell *matHeaderCellDef> ¿Tiene guía visual? </th>
-        <td class="text-center" mat-cell *matCellDef="let element"> {{element.hasGuide}} </td>
+      <!-- Description Column -->
+      <ng-container matColumnDef="description">
+        <th class="text-center" mat-header-cell *matHeaderCellDef> Descripción </th>
+        <td class="text-center" mat-cell *matCellDef="let element"> {{element.description}} </td>
       </ng-container>
 
       <!-- Status Column -->

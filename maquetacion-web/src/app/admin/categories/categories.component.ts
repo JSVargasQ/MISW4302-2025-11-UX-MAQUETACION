@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule, MatHeaderRowDef, MatRowDef, MatHeaderCellDef, MatCellDef } from '@angular/material/table';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { EditCategoryComponent } from './edit-category/edit-category.component';
+import { DeleteCategoryComponent } from './delete-category/delete-category.component';
 
 export interface Category {
   name: string;
@@ -67,6 +68,16 @@ export class CategoriesComponent {
           this.dataSource[index] = result;
           this.dataSource = [...this.dataSource];
         }
+      }
+    });
+  }
+
+  openDeleteDialog(element: Category) {
+    const dialogRef = this.dialog.open(DeleteCategoryComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.dataSource = this.dataSource.filter(item => item !== element);
       }
     });
   }

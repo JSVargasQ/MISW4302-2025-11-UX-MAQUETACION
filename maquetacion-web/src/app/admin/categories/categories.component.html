@@ -52,15 +52,16 @@
         <th class="text-center" mat-header-cell *matHeaderCellDef>Acciones</th>
         <td class="text-center" mat-cell *matCellDef="let element">
           <!-- Edit button -->
-          <button class="rounded-circle text-white button-primary" (click)="openEditDialog(element)" color="primary" mat-mini-fab
-            aria-label="Edit button">
+          <button class="rounded-circle text-white button-primary" (click)="openEditDialog(element)" color="primary"
+            mat-mini-fab aria-label="Edit button">
             <span class="material-symbols-outlined mt-1">
               edit
             </span>
           </button>
 
           <!-- Delete button -->
-          <button class="rounded-circle ms-2 text-white button-error" mat-mini-fab aria-label="Delete button">
+          <button class="rounded-circle ms-2 text-white button-error" (click)="openDeleteDialog(element)" mat-mini-fab
+            aria-label="Delete button">
             <span class="material-symbols-outlined mt-1">
               delete
             </span>

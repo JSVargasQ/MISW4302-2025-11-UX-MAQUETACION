@@ -3,7 +3,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule, MatHeaderRowDef, MatRowDef, MatHeaderCellDef, MatCellDef } from '@angular/material/table';
-import { AddExerciseComponent } from '../exercises/add-exercise/add-exercise.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import { EditCategoryComponent } from './edit-category/edit-category.component';
 
 export interface Category {
   name: string;
@@ -44,11 +45,29 @@ export class CategoriesComponent {
 
   readonly dialog = inject(MatDialog);
 
-  openDialog() {
-    const dialogRef = this.dialog.open(AddExerciseComponent);
+  openAddDialog() {
+    const dialogRef = this.dialog.open(AddCategoryComponent);
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      if (result) {
+        this.dataSource = [...this.dataSource, result];
+      }
+    });
+  }
+
+  openEditDialog(element: Category) {
+    const dialogRef = this.dialog.open(EditCategoryComponent, {
+      data: { ...element }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        const index = this.dataSource.findIndex(item => item.name === element.name);
+        if (index !== -1) {
+          this.dataSource[index] = result;
+          this.dataSource = [...this.dataSource];
+        }
+      }
     });
   }
 

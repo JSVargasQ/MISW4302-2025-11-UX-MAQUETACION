@@ -8,7 +8,7 @@
 
       <div class="col text-end  me-auto">
         <!-- Button to add a new category -->
-        <button (click)="openDialog()" mat-flat-button>
+        <button (click)="openAddDialog()" mat-flat-button>
           <mat-icon>add_circle_outline</mat-icon>
           Agregar categoría
         </button>
@@ -52,7 +52,7 @@
         <th class="text-center" mat-header-cell *matHeaderCellDef>Acciones</th>
         <td class="text-center" mat-cell *matCellDef="let element">
           <!-- Edit button -->
-          <button class="rounded-circle text-white button-primary" color="primary" mat-mini-fab
+          <button class="rounded-circle text-white button-primary" (click)="openEditDialog(element)" color="primary" mat-mini-fab
             aria-label="Edit button">
             <span class="material-symbols-outlined mt-1">
               edit

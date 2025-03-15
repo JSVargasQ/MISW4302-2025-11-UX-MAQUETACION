@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ux.mobilemocks.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_ex1Fragment"
+            app:destination="@id/customRemindFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.ux.mobilemocks.ui.list.ListFragment"
+        android:label="@string/title_alarms"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_ex1Fragment"
+            app:destination="@id/ex1Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ex1Fragment"
+        android:name="com.ux.mobilemocks.ui.exercises.Ex1Fragment"
+        android:label="@string/title_ex1"
+        tools:layout="@layout/fragment_ex1">
+        <action
+            android:id="@+id/action_ex1Fragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_ex1Fragment_to_ex2Fragment"
+            app:destination="@id/ex2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ex2Fragment"
+        android:name="com.ux.mobilemocks.ui.exercises.Ex2Fragment"
+        android:label="@string/title_ex2"
+        tools:layout="@layout/fragment_ex2">
+        <action
+            android:id="@+id/action_ex2Fragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_ex2Fragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_ex2Fragment_to_ex1Fragment"
+            app:destination="@id/ex1Fragment" />
+        <action
+            android:id="@+id/action_ex2Fragment_to_ex3Fragment"
+            app:destination="@id/ex3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ex3Fragment"
+        android:name="com.ux.mobilemocks.ui.exercises.Ex3Fragment"
+        android:label="@string/title_ex3"
+        tools:layout="@layout/fragment_ex3">
+        <action
+            android:id="@+id/action_ex3Fragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_ex3Fragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_ex3Fragment_to_ex2Fragment"
+            app:destination="@id/ex2Fragment" />
+        <action
+            android:id="@+id/action_ex3Fragment_to_ex4Fragment"
+            app:destination="@id/ex4Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ex4Fragment"
+        android:name="com.ux.mobilemocks.ui.exercises.Ex4Fragment"
+        android:label="@string/title_ex4"
+        tools:layout="@layout/fragment_ex4">
+        <action
+            android:id="@+id/action_ex4Fragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_ex4Fragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_ex4Fragment_to_ex3Fragment"
+            app:destination="@id/ex3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.ux.mobilemocks.ui.summary.SummaryFragment"
+        android:label="@string/summary"
+        tools:layout="@layout/fragment_summary">
+        <action
+            android:id="@+id/action_summaryFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/customRemindFragment"
+        android:name="com.ux.mobilemocks.ui.home.CustomRemindFragment"
+        android:label="Recordatorio personalizado"
+        tools:layout="@layout/fragment_custom_remind">
+        <action
+            android:id="@+id/action_customRemindFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+</navigation>

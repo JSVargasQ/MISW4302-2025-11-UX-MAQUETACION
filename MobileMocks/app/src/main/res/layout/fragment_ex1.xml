@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.exercises.Ex1Fragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarEx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBarEx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:navigationIcon="@drawable/arrow_back_24px"
+            app:title="@string/title_ex1"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/gifEx1"
+        android:layout_width="363.49dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/title_ex1"
+        android:src="@drawable/postura_silla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarEx1"
+        app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+    <TextView
+        android:id="@+id/instructions_ex1"
+        android:layout_width="364dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="19dp"
+        android:gravity="center_vertical"
+        android:text="@string/instructions_ex1"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gifEx1" />
+
+    <TextView
+        android:id="@+id/repeats_ex1"
+        android:layout_width="364dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/repeats_ex1"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instructions_ex1" />
+
+    <TextView
+        android:id="@+id/rest_ex1"
+        android:layout_width="364dp"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/rest_ex1"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/repeats_ex1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rest_ex1">
+
+        <Button
+            android:id="@+id/iconButtonPreviousEx1"
+            style="@style/Widget.Material3.Button.IconButton.Filled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:contentDescription="@string/previous"
+            android:enabled="false"
+            app:icon="@drawable/arrow_left_24px" />
+
+        <Button
+            android:id="@+id/finishButtonEx1"
+            style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="131dp"
+            android:text="@string/finish" />
+
+        <Button
+            android:id="@+id/iconButtonNextEx1"
+            style="@style/Widget.Material3.Button.IconButton.Filled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="292dp"
+            android:contentDescription="@string/next"
+            app:icon="@drawable/arrow_right_24px" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,10 @@
 
 ### Instrucciones
 
-1. Abrir una terminal desde la carpeta `maquetacion-web`.
+1. Abrir una terminal desde la carpeta `maquetacion-web` o ejecutar desde la raiz e intercambiar a la ruta.
+ ```bash
+> cd maquetacion-web
+``` 
 2. Ejecutar el siguiente comando para instalar las dependencias:
 
 ```bash

@@ -12,14 +12,18 @@
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_navigation_home_to_ex1Fragment"
-            app:destination="@id/ex1Fragment" />
+            app:destination="@id/customRemindFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/listFragment"
         android:name="com.ux.mobilemocks.ui.list.ListFragment"
         android:label="@string/title_alarms"
-        tools:layout="@layout/fragment_list" />
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_ex1Fragment"
+            app:destination="@id/ex1Fragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/ex1Fragment"
@@ -96,5 +100,15 @@
         <action
             android:id="@+id/action_summaryFragment_to_navigation_home"
             app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/customRemindFragment"
+        android:name="com.ux.mobilemocks.ui.home.CustomRemindFragment"
+        android:label="Recordatorio personalizado"
+        tools:layout="@layout/fragment_custom_remind">
+        <action
+            android:id="@+id/action_customRemindFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
 </navigation>

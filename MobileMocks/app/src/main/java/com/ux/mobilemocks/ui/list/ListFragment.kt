@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.ux.mobilemocks.R
 import com.ux.mobilemocks.databinding.FragmentListBinding
 
 class ListFragment : Fragment() {
@@ -24,7 +26,9 @@ class ListFragment : Fragment() {
         _binding = FragmentListBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-
+        binding.btnGoToExerc1.setOnClickListener {
+            findNavController().navigate(R.id.action_listFragment_to_ex1Fragment)
+        }
 
         return root
     }

@@ -61,4 +61,9 @@
     <string name="dialog_ig">Instagram</string>
     <string name="dialog_x">X</string>
     <string name="cancel">Cancelar</string>
+
+    <string name="title_list_exercises">Ejercicios</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

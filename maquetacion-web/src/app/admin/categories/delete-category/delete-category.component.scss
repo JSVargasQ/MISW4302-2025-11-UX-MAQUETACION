@@ -1,0 +1,28 @@
+// Asegúrate de que los botones tengan el estilo de texto de Angular Material
+button[mat-button] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    line-height: 20px;
+    border-radius: 4px;
+    background: transparent;
+    color: #6750A4;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+  
+    &:hover {
+      background: rgba(#6750A4, 0.08);
+      border-radius: 25px;
+    }
+  
+    &:focus {
+      background: rgba(#6750A4, 0.1);
+      border-radius: 25px;
+    }
+  }

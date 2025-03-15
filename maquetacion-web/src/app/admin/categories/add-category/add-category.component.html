@@ -1,0 +1,42 @@
+<!-- Title dialog -->
+<h1 mat-dialog-title class="text-center my-3">
+  Agregar categoría
+</h1>
+
+<!-- Content dialog-->
+<mat-dialog-content class="mat-typography mx-3">
+
+  <div class="row container gap-3 mt-1">
+    <!-- Name -->
+    <mat-form-field class="col-12" appearance="outline">
+      <mat-label>Categoría</mat-label>
+      <input matInput placeholder="" [(ngModel)]="name" required>
+      <mat-error *ngIf="name === ''">La categoría es obligatoria.</mat-error>
+    </mat-form-field>
+
+    <!-- Description -->
+    <mat-form-field class="col-12" appearance="outline">
+      <mat-label>Descripción</mat-label>
+      <textarea matInput [(ngModel)]="description" required></textarea>
+      <mat-error *ngIf="description === ''">La descripción es obligatoria.</mat-error>
+    </mat-form-field>
+  </div>
+
+
+</mat-dialog-content>
+
+
+<!-- Actions buttons -->
+<mat-dialog-actions class="my-3" align="center">
+
+  <!-- Add button-->
+  <button mat-flat-button (click)="save()" [disabled]="name === '' || description === ''">
+    Agregar
+  </button>
+
+  <!-- Cancel button-->
+  <button class="btn-closed" mat-flat-button (click)="cancel()" mat-dialog-close [mat-dialog-close]="true"
+    cdkFocusInitial>
+    Cancelar
+  </button>
+</mat-dialog-actions>

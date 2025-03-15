@@ -1,0 +1,51 @@
+<!-- Title dialog -->
+<h1 mat-dialog-title class="text-center my-3">
+  Editar categoría
+</h1>
+
+<!-- Content dialog-->
+<mat-dialog-content class="mat-typography mx-3">
+
+  <div class="row container gap-3 mt-1">
+    <!-- Name -->
+    <mat-form-field class="col-12" appearance="outline">
+      <mat-label>Categoría</mat-label>
+      <input matInput placeholder="" [(ngModel)]="data.name" required>
+      <mat-error *ngIf="data.name === ''">La categoría es obligatoria.</mat-error>
+    </mat-form-field>
+
+    <!-- Description -->
+    <mat-form-field class="col-12" appearance="outline">
+      <mat-label>Descripción</mat-label>
+      <textarea matInput [(ngModel)]="data.description" required></textarea>
+      <mat-error *ngIf="data.description === ''">La descripción es obligatoria.</mat-error>
+    </mat-form-field>
+
+    <!-- Status -->
+    <mat-form-field class="col-12" appearance="outline">
+      <mat-label>Estado</mat-label>
+      <mat-select [(ngModel)]="data.status"  required>
+        <mat-option value="Activo">Activo</mat-option>
+        <mat-option value="Inactivo">Inactivo</mat-option>
+      </mat-select>
+      <mat-error *ngIf="data.description === ''">El estado es obligatorio.</mat-error>
+    </mat-form-field>
+  </div>
+
+</mat-dialog-content>
+
+
+<!-- Actions buttons -->
+<mat-dialog-actions class="my-3" align="center">
+
+  <!-- Add button-->
+  <button mat-flat-button (click)="save()" [disabled]="data.name === '' || data.description === '' || data.status === ''">
+    Editar
+  </button>
+
+  <!-- Cancel button-->
+  <button class="btn-closed" mat-flat-button (click)="cancel()" mat-dialog-close [mat-dialog-close]="true"
+    cdkFocusInitial>
+    Cancelar
+  </button>
+</mat-dialog-actions>

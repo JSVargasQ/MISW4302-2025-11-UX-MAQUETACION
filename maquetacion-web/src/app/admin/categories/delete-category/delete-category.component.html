@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>¿Eliminar la categoría seleccionada?</h1>
+<mat-dialog-content>
+  <p>La categoría será eliminada de la lista de categorías. Esta acción no se puede deshacer.</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-button cdkFocusInitial (click)="onDelete()">Eliminar</button>
+</mat-dialog-actions>

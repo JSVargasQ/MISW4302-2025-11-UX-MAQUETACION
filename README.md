@@ -45,3 +45,13 @@
 1. Descargar el APK.
 2. Instalar el APK.
 3. Ejecutar la aplicación.
+
+### Demo Mobile
+
+[demo_mobile.webm](https://github.com/user-attachments/assets/0dff4b28-f257-414b-b684-a9fc63b6b7ad)
+
+
+### Demo Web
+
+https://github.com/user-attachments/assets/349f33cb-3a75-4a22-a927-c90f874d677f
+
